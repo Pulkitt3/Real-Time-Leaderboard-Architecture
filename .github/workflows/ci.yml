@@ -1,0 +1,37 @@
+name: Android CI
+
+on:
+  push:
+    branches: ["main", "master"]
+  pull_request:
+    branches: ["*"]
+
+jobs:
+  build-and-quality:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+          cache: gradle
+
+      - name: Make Gradle executable
+        run: chmod +x gradlew
+
+      - name: Run unit tests
+        run: ./gradlew testDebugUnitTest :leaderboard:test :gameplay:test
+
+      - name: Run Android lint
+        run: ./gradlew lintDebug
+
+      - name: Run Kotlin style checks
+        run: ./gradlew ktlintCheck
+
+      - name: Run static analysis
+        run: ./gradlew detekt

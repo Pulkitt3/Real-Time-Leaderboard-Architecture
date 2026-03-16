@@ -1,0 +1,14 @@
+style:
+  MagicNumber:
+    active: false
+
+naming:
+  FunctionNaming:
+    active: true
+    ignoreAnnotated:
+      - Composable
+      - Preview
+
+complexity:
+  LongParameterList:
+    constructorThreshold: 8

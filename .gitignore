@@ -1,0 +1,37 @@
+# IDE / hidden folders
+.idea/
+.vscode/
+.kotlin/
+.gradle/
+*.iml
+
+# Build output (root + all modules)
+build/
+**/build/
+bin/
+**/bin/
+captures/
+
+# Local machine files
+local.properties
+.DS_Store
+Thumbs.db
+
+# Android native/generated
+.externalNativeBuild/
+.cxx/
+
+# Logs / temp
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
+tmp/
+temp/
+
+# Secrets / signing
+*.jks
+*.keystore
+keystore.properties
