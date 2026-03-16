@@ -32,7 +32,7 @@ Gradle module layout:
 
 Gradle module: `:gameplay`
 
-Package: `app.gameleaderboard.engine`
+Package: `app.gameleaderboard.gameplay`
 
 - `ScoreGenerator`: UI-agnostic contract that emits `Flow<ScoreUpdate>`.
 - `RandomScoreGenerator`: reusable implementation simulating backend score events.
