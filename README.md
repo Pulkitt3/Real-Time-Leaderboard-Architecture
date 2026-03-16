@@ -2,7 +2,9 @@
 
 This project implements a modular, real-time leaderboard system for Android using Kotlin, Coroutines, Flow, MVVM, and Jetpack Compose.
 ## Video for reference
-Screen_recording_20260316_105703.mp4
+
+[Watch Demo](Screen_recording_20260316_105703.mp4)
+
 ## How to run
 
 1. Open project in Android Studio (latest stable).
