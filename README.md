@@ -1,6 +1,7 @@
 # Real-Time Leaderboard Architecture Assignment
 
 This project implements a modular, real-time leaderboard system for Android using Kotlin, Coroutines, Flow, MVVM, and Jetpack Compose.
+## Video for reference
 
 ## How to run
 
